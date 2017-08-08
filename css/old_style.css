@@ -1,0 +1,186 @@
+html,
+body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #404040;
+    background-color: #1B2438;
+    height: 80%;
+}
+
+
+/* headings
+ - make bold (700 weight)
+ - removed default heading top/bottom margin
+ - padding to add space left/right of the text - http://www.w3schools.com/css/css_padding.asp
+*/
+h1,
+h2,
+h3,
+h4	{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+/* define font size for each heading type */
+h1	{
+    font-size: 32px;
+}
+
+h2	{
+    font-size: 28px;
+}
+
+h3	{
+    font-size: 24px;
+}
+
+h4	{
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 10px;
+    /* define global definition for paragraph */
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+}
+
+/* The selected item on nav bar colour */
+a:hover, a:active {
+    background-color: #4FBABB;
+}
+
+
+/* html containers - http://www.w3schools.com/html/html5_new_elements.asp */
+
+/* Nav bar colour */
+nav {
+    text-align: center;
+    width: 100%;
+    background-color: #387C99;
+    height: 40px;
+}
+
+
+nav ul {
+    /* remove bullet points */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 40px;
+
+    /* hide anything outside the boundaries of the container */
+    /*overflow: hidden;*/
+}
+
+/* The nav bar options/button colours */
+nav li {
+    float: left;
+    background-color: #387C99;
+
+}
+
+/* Nav bar text color */
+nav li a {
+    color: white;
+    /* http://www.w3schools.com/cssref/pr_class_display.asp */
+    display: block;
+    padding: 12px;
+    line-height: 1;
+}
+
+/* ------- START: Nav bar dropdown menu for Projects ------- */
+
+/* Background color of the dropdown nav menu option */
+.dropdown-content {
+    background-color: #387C99;
+    color: white;
+    text-decoration: none;
+    /*display: block;*/
+    opacity: 0;
+    visibility: visible;
+    transition: 150ms ease all;
+    position: absolute;
+    top: 50%;
+}
+
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+}
+
+/* The color of the contents of the dropdown menu */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+/* The color of the highlighted drop down menu focus */
+.dropdown-content a:hover {background-color: #4FBABB}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------- END: Nav bar dropdown menu for projects ------- */
+
+.panel  {
+    /* use this for any panel that's to contain text/images/content class="panel" */
+    padding: 0 10px;
+    background-color: #F0EEDD;
+    height: 80%;
+}
+
+.loginbar {
+  padding: 0 10px;
+  right: 30%;
+  top: 50%;
+  position: absolute;
+}
+
+.thumbnails {
+    height: 165px;
+    width: 325px;
+}
+
+.Absolute-Center.is-Responsive {
+    padding: 40px;
+    background-color: #F0EEDD;
+}
+
+/* html5 container */
+footer {
+    text-align: center;
+    color: white;
+}
+
+/* global definition to center and apply max width to any div */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.img-thumbnail {
+    float: left;
+    margin: 0px 15px 15px 0px;
+    height: 165px;
+    width: 325px;
+    color: black;
+
+}
+
+.news {
+  border-style: solid;
+  border-width: 2px;
+  border-color: : grey;
+}
